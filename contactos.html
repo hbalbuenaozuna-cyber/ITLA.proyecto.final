@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | ITLA Cyber</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --azul-oscuro: #050510;
+            --azul-brillante: #00d4ff;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--azul-oscuro);
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgba(10, 10, 20, 0.95);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Tarjetas de Recintos */
+        .campus-card {
+            background: var(--glass);
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .campus-card:hover {
+            border-color: var(--azul-brillante);
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 212, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--azul-brillante);
+            margin-bottom: 15px;
+        }
+
+        /* Estilo de Tablas de Extensiones */
+        .table-cyber {
+            color: white;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .table-cyber th { color: var(--azul-brillante); text-transform: uppercase; font-size: 0.8rem; }
+        
+        .section-title {
+            border-left: 4px solid var(--azul-brillante);
+            padding-left: 15px;
+            margin: 40px 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--azul-brillante);">ITLA </a>
+            <a href="index.html" class="btn btn-outline-info btn-sm rounded-pill px-3">Inicio</a>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold" style="color: var(--azul-brillante);">Contactos</span></h1>
+            <p class="text-secondary">Encuentra la sede más cercana a ti</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="campus-card">
+                    <div class="icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
+                    <h5 class="fw-bold">Santo Domingo Norte</h5>
+                    <p class="small text-secondary">Estación Metro Mamá Tingó, Villa Mella.</p>
+                    <div class="small">
+                        <p class="mb-1"><i class="bi bi-telephone me-2 text-info"></i>809-738-4852 (Opción 2)</p>
+                        <p class="mb-1"><i class="bi bi-envelope me-2 text-info"></i>santodomingonorte@itla.edu.do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="campus-card">
+                    <div class="icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
+                    <h5 class="fw-bold">Santo Domingo Este</h5>
+                    <p class="small text-secondary">Parada de la Cultura, Marginal Las Américas.</p>
+                    <div class="small">
+                        <p class="mb-1"><i class="bi bi-telephone me-2 text-info"></i>809-738-4852 (Opción 2)</p>
+                        <p class="mb-1"><i class="bi bi-envelope me-2 text-info"></i>extensionsde@itla.edu.do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="campus-card">
+                    <div class="icon-circle"><i class="bi bi-buildings-fill"></i></div>
+                    <h5 class="fw-bold">Sede La Caleta</h5>
+                    <p class="small text-secondary">Autopista Las Américas Km 27, PCSD.</p>
+                    <div class="small">
+                        <p class="mb-1"><i class="bi bi-telephone me-2 text-info"></i>809-738-4852 (Opción 0)</p>
+                        <p class="mb-1"><i class="bi bi-envelope me-2 text-info"></i>educacontinua@itla.edu.do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="campus-card">
+                    <div class="icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
+                    <h5 class="fw-bold">Santiago</h5>
+                    <p class="small text-secondary">Edif. Aney Muñoz II, Av. 27 de Febrero.</p>
+                    <div class="small">
+                        <p class="mb-1"><i class="bi bi-telephone me-2 text-info"></i>829-451-9395</p>
+                        <p class="mb-1"><i class="bi bi-envelope me-2 text-info"></i>infosantiago@itla.edu.do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="campus-card">
+                    <div class="icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
+                    <h5 class="fw-bold">San Pedro de Macorís</h5>
+                    <p class="small text-secondary">Calle Marino Soler (Detrás Estadio Tetelo Vargas).</p>
+                    <div class="small">
+                        <p class="mb-1"><i class="bi bi-telephone me-2 text-info"></i>809-951-5230</p>
+                        <p class="mb-1"><i class="bi bi-envelope me-2 text-info"></i>extension.spm@itla.edu.do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="campus-card">
+                    <div class="icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
+                    <h5 class="fw-bold">Nagua</h5>
+                    <p class="small text-secondary">Premium Plaza, Carretera Nagua – SFM.</p>
+                    <div class="small">
+                        <p class="mb-1"><i class="bi bi-telephone me-2 text-info"></i>809-738-4852 (Opción 2)</p>
+                        <p class="mb-1"><i class="bi bi-envelope me-2 text-info"></i>nagua@itla.edu.do</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title fw-bold">Extensiones <span style="color: var(--azul-brillante);">Internas</span></h2>
+        
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="info-panel bg-dark p-4 rounded-4 border border-secondary border-opacity-25 mb-4">
+                    <h5 class="fw-bold text-info mb-3"><i class="bi bi-book me-2"></i>Académicos</h5>
+                    <table class="table table-dark table-hover table-sm table-cyber">
+                        <tbody>
+                            <tr><td>Admisiones</td><td class="text-end fw-bold">321, 379</td></tr>
+                            <tr><td>Becas</td><td class="text-end fw-bold">307, 373</td></tr>
+                            <tr><td>Registro</td><td class="text-end fw-bold">314</td></tr>
+                            <tr><td>Software</td><td class="text-end fw-bold">305</td></tr>
+                            <tr><td>Mecatrónica</td><td class="text-end fw-bold">299</td></tr>
+                            <tr><td>Multimedia</td><td class="text-end fw-bold">212</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="info-panel bg-dark p-4 rounded-4 border border-secondary border-opacity-25 mb-4">
+                    <h5 class="fw-bold text-info mb-3"><i class="bi bi-briefcase me-2"></i>Administrativo</h5>
+                    <table class="table table-dark table-hover table-sm table-cyber">
+                        <tbody>
+                            <tr><td>Caja</td><td class="text-end fw-bold">313</td></tr>
+                            <tr><td>Compras</td><td class="text-end fw-bold">224, 385</td></tr>
+                            <tr><td>Cuentas por Cobrar</td><td class="text-end fw-bold">270</td></tr>
+                            <tr><td>Recursos Humanos</td><td class="text-end fw-bold">244</td></tr>
+                            <tr><td>Jurídico</td><td class="text-end fw-bold">325</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="info-panel bg-dark p-4 rounded-4 border border-secondary border-opacity-25 mb-4">
+                    <h5 class="fw-bold text-info mb-3"><i class="bi bi-person-gear me-2"></i>Gerenciales</h5>
+                    <table class="table table-dark table-hover table-sm table-cyber">
+                        <tbody>
+                            <tr><td>Comunicaciones</td><td class="text-end fw-bold">329</td></tr>
+                            <tr><td>Finanzas</td><td class="text-end fw-bold">248</td></tr>
+                            <tr><td>Vicerrectoría Acad.</td><td class="text-end fw-bold">241</td></tr>
+                            <tr><td>Calidad</td><td class="text-end fw-bold">257</td></tr>
+                            <tr><td>Operaciones</td><td class="text-end fw-bold">223</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-6">
+                <div class="p-4 rounded-4" style="background: rgba(0, 212, 255, 0.05); border: 1px dashed var(--azul-brillante);">
+                    <h4 class="fw-bold mb-4 text-center">¿Necesitas más información?</h4>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control bg-transparent text-white" placeholder="Nombre completo">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control bg-transparent text-white" placeholder="Correo electrónico">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control bg-transparent text-white" rows="3" placeholder="Tu mensaje o duda..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100 rounded-pill fw-bold" style="background: var(--azul-brillante); border: none;">ENVIAR CONSULTA</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 text-center border-top border-secondary border-opacity-25">
+        <p class="small text-secondary"> 2026 ITLA - Atención al Usuario</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
